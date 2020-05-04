@@ -4,9 +4,9 @@
   "description": "A set of functions for testing character codes.",
   "author": "electricessence",
   "license": "MIT",
-  "types": "dist/index.d.ts",
-  "main": "dist/index.js",
-  "module": "dist-esm/index.js",
+  "types": "dist/char.d.ts",
+  "main": "dist/char.js",
+  "module": "dist-esm/char.js",
   "keywords": [
     "character",
     "code",
