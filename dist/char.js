@@ -5,6 +5,7 @@
  * Licensing: MIT
  */
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.isDigit = exports.isLetterOrDigit = exports.isLetter = exports.isWhiteSpace = void 0;
 /**
  * Returns true if the character code is white-space.
  * @param {number} ch
