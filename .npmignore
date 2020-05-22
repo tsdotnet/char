@@ -8,3 +8,5 @@ obj
 /docs
 typedoc.json
 tsconfig.*
+pnpm-lock.yaml
+package-lock.json
