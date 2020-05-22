@@ -4,4 +4,5 @@ node_modules
 !.idea/dictionaries/shared.xml
 !.idea/dictionaries/local.xml
 
-
+#using pnpm instead of npm
+package-lock.json
