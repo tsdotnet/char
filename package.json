@@ -1,6 +1,6 @@
 {
   "name": "@tsdotnet/char",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A set of functions for testing character codes.",
   "author": "electricessence",
   "license": "MIT",
