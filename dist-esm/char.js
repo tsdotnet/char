@@ -30,8 +30,8 @@ export function isLetterOrDigit(ch) {
         (97 <= ch && ch <= 122) ||
         (ch >= 128 && ch !== 133 && ch !== 160));
 }
-export function isDigit(chOrStr, index) {
-    if (index == null) {
+export function isDigit(chOrStr, index = 0) {
+    if (typeof chOrStr == 'number') {
         return 48 <= chOrStr && chOrStr <= 57;
     }
     else {

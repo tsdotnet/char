@@ -45,10 +45,10 @@ export function isLetterOrDigit (ch: number): boolean
  * @returns {boolean}
  */
 export function isDigit (ch: number): boolean;
-export function isDigit (str: string, index: number): boolean;
-export function isDigit (chOrStr: any, index?: number): boolean
+export function isDigit (str: string, index?: number): boolean;
+export function isDigit (chOrStr: number | string, index: number = 0): boolean
 {
-	if(index==null)
+	if(typeof chOrStr=='number')
 	{
 		return 48<=chOrStr && chOrStr<=57;
 	}

@@ -27,4 +27,4 @@ export declare function isLetterOrDigit(ch: number): boolean;
  * @returns {boolean}
  */
 export declare function isDigit(ch: number): boolean;
-export declare function isDigit(str: string, index: number): boolean;
+export declare function isDigit(str: string, index?: number): boolean;
