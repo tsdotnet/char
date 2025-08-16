@@ -5,7 +5,10 @@
  * Licensing: MIT
  */
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.isDigit = exports.isLetterOrDigit = exports.isLetter = exports.isWhiteSpace = void 0;
+exports.isWhiteSpace = isWhiteSpace;
+exports.isLetter = isLetter;
+exports.isLetterOrDigit = isLetterOrDigit;
+exports.isDigit = isDigit;
 /**
  * Returns true if the character code is white-space.
  * @param {number} ch
@@ -14,7 +17,6 @@ exports.isDigit = exports.isLetterOrDigit = exports.isLetter = exports.isWhiteSp
 function isWhiteSpace(ch) {
     return ch === 32 || (ch >= 9 && ch <= 13) || ch === 133 || ch === 160;
 }
-exports.isWhiteSpace = isWhiteSpace;
 /**
  * Returns true if the character code is an alpha letter (case insensitive).
  * @param {number} ch
@@ -23,7 +25,6 @@ exports.isWhiteSpace = isWhiteSpace;
 function isLetter(ch) {
     return (65 <= ch && ch <= 90) || (97 <= ch && ch <= 122) || (ch >= 128 && ch !== 133 && ch !== 160);
 }
-exports.isLetter = isLetter;
 /**
  * Returns true if the character code is alphanumeric.
  * @param {number} ch
@@ -35,7 +36,6 @@ function isLetterOrDigit(ch) {
         (97 <= ch && ch <= 122) ||
         (ch >= 128 && ch !== 133 && ch !== 160));
 }
-exports.isLetterOrDigit = isLetterOrDigit;
 function isDigit(chOrStr, index = 0) {
     if (typeof chOrStr == 'number') {
         return 48 <= chOrStr && chOrStr <= 57;
@@ -45,5 +45,4 @@ function isDigit(chOrStr, index = 0) {
         return 48 <= ch && ch <= 57;
     }
 }
-exports.isDigit = isDigit;
 //# sourceMappingURL=char.js.map
