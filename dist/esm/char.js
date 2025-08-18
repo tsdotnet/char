@@ -3,19 +3,19 @@
  * From Netjs mscorlib.ts
  * Licensing: MIT
  */
-export function isWhiteSpace(ch) {
+function isWhiteSpace(ch) {
     return ch === 32 || (ch >= 9 && ch <= 13) || ch === 133 || ch === 160;
 }
-export function isLetter(ch) {
+function isLetter(ch) {
     return (65 <= ch && ch <= 90) || (97 <= ch && ch <= 122) || (ch >= 128 && ch !== 133 && ch !== 160);
 }
-export function isLetterOrDigit(ch) {
+function isLetterOrDigit(ch) {
     return ((48 <= ch && ch <= 57) ||
         (65 <= ch && ch <= 90) ||
         (97 <= ch && ch <= 122) ||
         (ch >= 128 && ch !== 133 && ch !== 160));
 }
-export function isDigit(chOrStr, index = 0) {
+function isDigit(chOrStr, index = 0) {
     if (typeof chOrStr == 'number') {
         return 48 <= chOrStr && chOrStr <= 57;
     }
@@ -24,4 +24,6 @@ export function isDigit(chOrStr, index = 0) {
         return 48 <= ch && ch <= 57;
     }
 }
+
+export { isDigit, isLetter, isLetterOrDigit, isWhiteSpace };
 //# sourceMappingURL=char.js.map
