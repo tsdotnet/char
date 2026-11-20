@@ -1,4 +1,4 @@
-<a href="https://tsdotnet.github.io/char/"><img src="https://cdn.jsdelivr.net/gh/tsdotnet/char@master/assets/banner.svg" alt="@tsdotnet/char: Classify characters. Letters, digits and white space."></a>
+<a name="banner"><img src="https://cdn.jsdelivr.net/gh/tsdotnet/char@master/assets/banner.svg" alt="@tsdotnet/char: Classify characters. Letters, digits and white space."></a>
 
 [![npm version](https://img.shields.io/npm/v/@tsdotnet/char.svg?style=flat-square)](https://www.npmjs.com/package/@tsdotnet/char)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/tsdotnet/char/blob/master/LICENSE)
